@@ -1,5 +1,5 @@
 # hson
-
+[![ci](https://github.com/codeworse/hson/actions/workflows/haskell.yml/badge.svg)](https://github.com/codeworse/haskell/actions/workflows/haskell.yml)&nbsp;
 A Haskell library for parsing and merging [BSON](https://bsonspec.org/) documents.
 
 ## Types
