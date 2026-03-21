@@ -7,11 +7,15 @@ dependencies:
   - binary
   - text
   - containers
+  - unordered-containers
 
 library:
   source-dirs: src
   exposed-modules:
     - Hson
+    - Hson.Parse
+    - Hson.Merge
+    - Hson.Get
 
 tests:
   hson-test:
