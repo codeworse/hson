@@ -1,0 +1,24 @@
+name: hson
+version: 0.1.0.0
+
+dependencies:
+  - base
+  - bytestring
+  - binary
+  - text
+  - containers
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Hson
+
+tests:
+  hson-test:
+    main: Main.hs
+    source-dirs: test
+    dependencies:
+      - hson
+      - tasty
+      - tasty-hunit
+      - binary

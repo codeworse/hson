@@ -1,0 +1,22 @@
+resolver: lts-24.23
+
+packages:
+- .
+
+ghc-options:
+  "$locals": |
+    -Weverything
+    -Wno-unsafe
+    -Wno-safe
+    -Wno-missing-safe-haskell-mode
+    -Wno-missing-import-lists
+    -Wno-missing-kind-signatures
+    -Wno-all-missed-specialisations
+    -Wno-missed-specialisations
+    -Wno-partial-type-signatures
+    -Wno-partial-fields
+    -Wno-operator-whitespace
+    -Wno-missed-extra-shared-lib
+    -Wno-missing-role-annotations
+    -Wno-missing-poly-kind-signatures
+    -Wno-implicit-prelude
