@@ -2,29 +2,31 @@ name: Haskell CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 permissions:
   contents: read
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
       - uses: haskell-actions/setup@v2
         with:
           enable-stack: true
-          stack-version: 'latest'
-      
+          stack-version: "latest"
+
       - name: Install dependencies
         run: stack setup
-      
+
+      - name: Init
+        run: stack init
+
       - name: Build
         run: stack build --test --no-run-tests
-      
+
       - name: Run tests
         run: stack test
